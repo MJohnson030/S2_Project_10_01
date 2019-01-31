@@ -6,8 +6,8 @@
    Case Problem 1
 
    Rhetoric in the United States Styles for Media
-   Author: 
-   Date:   
+   Author: Millione Johnson
+   Date: 1/29/19  
 
    Filename: ws_media.css
 
@@ -15,9 +15,33 @@
 
 /* VideoPlayer Styles */
 
+video {
+   display: block;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
 
+/* Style rules applied to the video element in order to change the width and margin spacing. */
 
+@media only screen and (min-width:521px) {
+   video{
+      width: 360px;
+      float: right;
+      margin: 10px;
+   }
+}
+
+/* Applies style rules to create media queries for different screen sizes */
 
 /* Track Styles */
 
+::cue {
+   font: 1.3em sans-serif;
+   color: rgb(221, 128, 160);
+   background-color: rgba(255, 255, 255, 0.8);
+}
 
+/* This is the design for the cue or subtitles seen on the video. We made the text-color pink and the background color white and also changed the font size and font type. */
